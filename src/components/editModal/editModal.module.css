@@ -1,0 +1,119 @@
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    position: relative;
+    width: 27.5%;
+    height: 80%;
+    border-radius: 12px;
+    padding: 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper .title {
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 36px;
+    color: #333;
+}
+
+.wrapper form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+}
+
+.wrapper .inputWrapper {
+    position: relative;
+}
+
+.wrapper .inputWrapper input {
+    border: none;
+    border-bottom: 1px solid var(--secondary-orange);
+    padding: 0.75rem;
+    padding-bottom: 0.25rem;
+    outline: none;
+}
+
+.wrapper label {
+    position: absolute;
+    color: black;
+    left: 0.25rem;
+    bottom: 1.5rem;
+    transition: 250ms all;
+}
+
+.wrapper .inputWrapper:focus-within>label {
+    position: absolute;
+    color: #777;
+    left: 0rem;
+    bottom: 2rem;
+    font-size: 12px;
+}
+
+.wrapper select {
+    width: 200px;
+    outline: none;
+    text-align: center;
+    font-size: 18px;
+    padding: 0.5rem;
+    background-color: var(--primary-orange);
+    color: white;
+    border-radius: 8px;
+    margin-right: 0.5rem;
+}
+
+.inputWrapperImage {
+    position: relative;
+    margin-top: 2.5rem;
+    margin-right: 12.5rem;
+    white-space: nowrap;
+}
+
+.inputWrapperImage>label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 18px;
+}
+
+.listBtn {
+    cursor: pointer;
+    outline: none;
+    border: 1px solid transparent;
+    padding: 0.75rem 1.75rem;
+    background-color: var(--primary-orange);
+    color: white;
+    font-size: 20px;
+    border-radius: 12px;
+    margin-top: 1.25rem;
+    transition: 150ms all ease-in-out;
+}
+
+.listBtn:hover {
+    background-color: white;
+    color: var(--primary-orange);
+    border-color: var(--primary-orange);
+}
+
+.closeIcon {
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    right: 8px;
+}

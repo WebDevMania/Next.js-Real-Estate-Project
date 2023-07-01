@@ -1,0 +1,43 @@
+.container {
+    height: 400px;
+    width: 350px;
+    text-decoration: none;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.imageContainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.imageContainer>img {
+    cursor: pointer;
+    height: 75%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.imageContainer>.propertyCategory {
+    position: absolute;
+    left: 0;
+    white-space: nowrap;
+    background-color: var(--secondary-orange);
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    border-bottom-right-radius: 8px;
+}
+
+.propertyData > h5{
+    color: var(--primary-orange);
+    font-size: 20px;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}

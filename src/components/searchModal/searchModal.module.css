@@ -1,0 +1,115 @@
+.container {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    position: relative;
+    width: 20%;
+    height: 37.5%;
+    border-radius: 12px;
+    padding: 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper .title {
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 28px;
+    color: #333;
+}
+
+.wrapper>.step_1>.inputsContainer {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+}
+
+.wrapper>.step_1>.inputsContainer>.inputWrapper>input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--primary-orange);
+}
+
+.wrapper>.step_1>.inputsContainer>.inputWrapper {
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.wrapper>.step_1>.inputsContainer>.inputWrapper>label:first-child {
+    position: absolute;
+    color: #555;
+    left: 0.5rem;
+    bottom: 0.5rem;
+    transition: 250ms all;
+}
+
+.wrapper>.step_1>.inputsContainer>.inputWrapper>label:last-child {
+    position: absolute;
+    color: #555;
+    left: 0.5rem;
+    bottom: 0.5rem;
+    transition: 250ms all;
+}
+
+.wrapper>.step_1>.inputsContainer>.inputWrapper:focus-within>label{
+    position: absolute;
+    color: #777;
+    left: 0rem;
+    bottom: 1.5rem;
+    font-size: 12px;
+}
+
+.wrapper>.step_2>.selectContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper>.step_2>.selectContainer>.type {
+    width: 50%;
+    outline: none;
+    text-align: center;
+    font-size: 18px;
+    padding: 0.5rem;
+    background-color: var(--primary-orange);
+    color: white;
+    border-radius: 8px;
+}
+
+.wrapper>.step_3>.selectContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper>.step_3>.selectContainer>.country {
+    width: 50%;
+    outline: none;
+    text-align: center;
+    font-size: 18px;
+    padding: 0.5rem;
+    background-color: var(--primary-orange);
+    color: white;
+    border-radius: 8px;
+}
+
+
+.closeIcon {
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 6px;
+}

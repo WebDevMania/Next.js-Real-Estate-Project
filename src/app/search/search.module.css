@@ -1,0 +1,48 @@
+.container {
+    margin-top: 7.5rem;
+    height: calc(100vh - 60px);
+    width: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.titles {
+    margin-left: -1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.titles>.mainTitle {
+    color: var(--primary-orange);
+    font-size: 36px;
+}
+
+.titles>.secondaryTitle {
+    color: var(--secondary-orange);
+    font-size: 24px;
+}
+
+.properties {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 5rem;
+}
+
+.goBack {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    position: absolute;
+    top: 6rem;
+    left: 1.5rem;
+    color: #fff;
+}

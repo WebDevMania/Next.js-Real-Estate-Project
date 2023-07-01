@@ -1,0 +1,39 @@
+.container {
+    width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    margin-top: 7.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.backBtn {
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    color: var(--secondary-orange);
+    border: 1px solid var(--primary-orange);
+    border-radius: 8px;
+    padding: 0.5rem 1.25rem;
+}
+
+.backBtn:disabled{
+    cursor: not-allowed;
+    border-color: #555;
+    color: #555;
+    opacity: 0.5;
+}
+
+.nextBtn {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-left: auto;
+    background-color: var(--primary-orange);
+    color: white;
+    border-radius: 8px;
+    padding: 0.5rem 1.25rem;
+}
